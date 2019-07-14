@@ -17,7 +17,8 @@ public class TestRedisTemplate {
 
     @Test
     public void testString(){
-        redisTemplate.opsForValue().set("pyy","hello");
-        Assert.assertEquals("hello",redisTemplate.opsForValue().get("pyy"));
+//        redisTemplate.opsForValue().set("key_three","hello3");
+        System.out.println("value = "+redisTemplate.opsForValue().get("key_four"));
+//        Assert.assertEquals("hello",redisTemplate.opsForValue().get("ccc"));
     }
 }
